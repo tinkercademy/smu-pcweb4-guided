@@ -1,10 +1,10 @@
 CREATE TABLE trips (
   `trip_id` INTEGER,
   `duration` INTEGER,
-  `start_date` TIMESTAMP,
+  `start_date` DATETIME,
   `start_station` VARCHAR(45),
   `start_terminal` INTEGER,
-  `end_date` TIMESTAMP,
+  `end_date` DATETIME,
   `end_station` VARCHAR(45),
   `end_terminal` INTEGER,
   `bike_id` INTEGER,
