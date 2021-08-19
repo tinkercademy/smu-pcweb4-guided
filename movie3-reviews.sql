@@ -1,4 +1,4 @@
-CREATE TABLE movie_reviews(
+CREATE TABLE reviews(
     user_id INT,
     movie_id INT,
     ratings DEC(2,1),
@@ -7,8 +7,8 @@ CREATE TABLE movie_reviews(
     FOREIGN KEY(movie_id) REFERENCES movies(movie_id) ON DELETE CASCADE,
     CHECK (ratings <= 5.0)
 );
-INSERT INTO movie_reviews VALUES(1,1,4.5);
-INSERT INTO movie_reviews VALUES(1,3,3.0);
-INSERT INTO movie_reviews VALUES(2,1,4.7);
-INSERT INTO movie_reviews VALUES(3,5,2.5);
-INSERT INTO movie_reviews VALUES(4,4,4.1);
+INSERT INTO reviews VALUES(1,1,4.5);
+INSERT INTO reviews VALUES(1,3,3.0);
+INSERT INTO reviews VALUES(2,1,4.7);
+INSERT INTO reviews VALUES(3,5,2.5);
+INSERT INTO reviews VALUES(4,4,4.1);
